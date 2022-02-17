@@ -56,6 +56,7 @@ while x < len(main):
         x = x + 1
         if count0 > max0:
             max0 = count0
+        count0 = 0
     elif main[x] == "110001":
         count1 = count1 + 1
         while x < len(main) - 1 and main[x + 1] == main[x]:
@@ -66,6 +67,7 @@ while x < len(main):
         x = x + 1
         if count1 > max1:
             max1 = count1
+        count1 = 0
     else:
         x = x + 1
 print(max0)
